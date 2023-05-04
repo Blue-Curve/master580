@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost/BCIISServices/BCIISServices.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/BlueCurve.IIS.Services" />
+  <xs:element name="AggregateUniverse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="run_id" type="xs:long" />
+        <xs:element minOccurs="0" name="universe_id" type="xs:long" />
+        <xs:element minOccurs="0" name="audit_id" type="xs:int" />
+        <xs:element minOccurs="0" name="audit_date" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AggregateUniverseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AggregateUniverseResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AggregateUniverseDebug">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="run_id" type="xs:long" />
+        <xs:element minOccurs="0" name="universe_id" type="xs:long" />
+        <xs:element minOccurs="0" name="audit_id" type="xs:int" />
+        <xs:element minOccurs="0" name="audit_date" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="target_entity_id" type="xs:long" />
+        <xs:element minOccurs="0" name="dual_entity_id" type="xs:long" />
+        <xs:element minOccurs="0" name="debug_exch_method" type="xs:int" />
+        <xs:element minOccurs="0" name="debug_calc_type" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="inc_constituents" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AggregateUniverseDebugResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/BlueCurve.IIS.Services" minOccurs="0" name="AggregateUniverseDebugResult" nillable="true" type="q1:agg_results" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:intf="http://zoidberg:8080/BlueCurveRMS/services/CMDSoap" xmlns:impl="http://zoidberg:8080/BlueCurveRMS/services/CMDSoap" targetNamespace="http://zoidberg:8080/BlueCurveRMS/services/CMDSoap" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types />
+  <wsdl:message name="disclosuresRequest">
+    <wsdl:part name="documentId" type="soapenc:string" />
+  </wsdl:message>
+  <wsdl:message name="listDocumentsRequest" />
+  <wsdl:message name="conflictsRequest">
+    <wsdl:part name="documentId" type="soapenc:string" />
+  </wsdl:message>
+  <wsdl:message name="listDocumentsResponse">
+    <wsdl:part name="listDocumentsReturn" type="soapenc:string" />
+  </wsdl:message>
+  <wsdl:message name="conflictsResponse">
+    <wsdl:part name="conflictsReturn" type="soapenc:string" />
+  </wsdl:message>
+  <wsdl:message name="pricechartRequest">
+    <wsdl:part name="documentId" type="soapenc:string" />
+    <wsdl:part name="stockId" type="soapenc:string" />
+  </wsdl:message>
+  <wsdl:message name="disclosuresResponse">
+    <wsdl:part name="disclosuresReturn" type="soapenc:string" />
+  </wsdl:message>
+  <wsdl:message name="pricechartResponse">
+    <wsdl:part name="pricechartReturn" type="soapenc:string" />
+  </wsdl:message>
+  <wsdl:portType name="CMDSoap">
+    <wsdl:operation name="conflicts" parameterOrder="documentId">
+      <wsdl:input name="conflictsRequest" message="impl:conflictsRequest" />
+      <wsdl:output name="conflictsResponse" message="impl:conflictsResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="disclosures" parameterOrder="documentId">
+      <wsdl:input name="disclosuresRequest" message="impl:disclosuresRequest" />
+      <wsdl:output name="disclosuresResponse" message="impl:disclosuresResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="pricechart" parameterOrder="documentId stockId">
+      <wsdl:input name="pricechartRequest" message="impl:pricechartRequest" />
+      <wsdl:output name="pricechartResponse" message="impl:pricechartResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="listDocuments">
+      <wsdl:input name="listDocumentsRequest" message="impl:listDocumentsRequest" />
+      <wsdl:output name="listDocumentsResponse" message="impl:listDocumentsResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CMDSoapSoapBinding" type="impl:CMDSoap">
+    <wsdlsoap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <wsdl:operation name="conflicts">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="conflictsRequest">
+        <wsdlsoap:body use="encoded" namespace="http://soap.rms.bluecurve.net" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="conflictsResponse">
+        <wsdlsoap:body use="encoded" namespace="http://zoidberg:8080/BlueCurveRMS/services/CMDSoap" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="disclosures">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="disclosuresRequest">
+        <wsdlsoap:body use="encoded" namespace="http://soap.rms.bluecurve.net" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="disclosuresResponse">
+        <wsdlsoap:body use="encoded" namespace="http://zoidberg:8080/BlueCurveRMS/services/CMDSoap" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="pricechart">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="pricechartRequest">
+        <wsdlsoap:body use="encoded" namespace="http://soap.rms.bluecurve.net" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="pricechartResponse">
+        <wsdlsoap:body use="encoded" namespace="http://zoidberg:8080/BlueCurveRMS/services/CMDSoap" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listDocuments">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="listDocumentsRequest">
+        <wsdlsoap:body use="encoded" namespace="http://soap.rms.bluecurve.net" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="listDocumentsResponse">
+        <wsdlsoap:body use="encoded" namespace="http://zoidberg:8080/BlueCurveRMS/services/CMDSoap" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CMDSoapService">
+    <wsdl:port name="CMDSoap" binding="impl:CMDSoapSoapBinding">
+      <wsdlsoap:address location="http://zoidberg:8080/BlueCurveRMS/services/CMDSoap" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

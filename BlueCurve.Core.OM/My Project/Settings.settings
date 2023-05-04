@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="BlueCurve_Core_OM_BlueCurveWebService_BlueCurveWS" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:60000/BlueCurve.Core.WS/BlueCurveWS.asmx</Value>
+    </Setting>
+    <Setting Name="BlueCurve_Core_OM_CommonPlatformWebService_CMDSoapService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://zoidberg:8080/BlueCurveRMS/services/CMDSoap</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

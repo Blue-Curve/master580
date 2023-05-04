@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://prose-pc.bc.local/bluecurve.core.ad.wcf/bluecurve_core_ad_wcf.svc?xsd=xsd0" filename="bluecurve_core_ad_wcf.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://prose-pc.bc.local/bluecurve.core.ad.wcf/bluecurve_core_ad_wcf.svc?wsdl" filename="bluecurve_core_ad_wcf.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.DiscoveryDocumentReference" url="http://prose-pc.bc.local/bluecurve.core.ad.wcf/bluecurve_core_ad_wcf.svc?disco" filename="bluecurve_core_ad_wcf.disco" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://prose-pc.bc.local/bluecurve.core.ad.wcf/bluecurve_core_ad_wcf.svc?xsd=xsd1" filename="bluecurve_core_ad_wcf0.xsd" />
+  </Results>
+</DiscoveryClientResultsFile>

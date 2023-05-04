@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F4761C8D-C932-4C13-B362-F5ECE8157147}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>BlueCurve.BluePrint.AM</RootNamespace>
+    <AssemblyName>BlueCurve.BluePrint.AM</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>BC.snk</AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\Build Directory\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>None</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Build Directory\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BlueCurve.Core.AS, Version=5.6.0.0, Culture=neutral, PublicKeyToken=dd79d4bfee48f542, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Build Directory\Debug\BlueCurve.Core.AS.dll</HintPath>
+    </Reference>
+    <Reference Include="BlueCurve.Core.CS, Version=5.6.0.0, Culture=neutral, PublicKeyToken=dd79d4bfee48f542, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Build Directory\Debug\BlueCurve.Core.CS.dll</HintPath>
+    </Reference>
+    <Reference Include="BlueCurve.Core.OM, Version=5.6.0.0, Culture=neutral, PublicKeyToken=dd79d4bfee48f542, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Build Directory\Debug\BlueCurve.Core.OM.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bc_am_blueprint.vb" />
+    <Compile Include="bc_am_bp_about.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bc_am_bp_add_label.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bc_am_bp_advanced.Designer.vb">
+      <DependentUpon>bc_am_bp_advanced.vb</DependentUpon>
+    </Compile>
+    <Compile Include="bc_am_bp_advanced.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bc_am_bp_clone.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bc_am_bp_component.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bc_am_bp_component_clone.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bc_am_bp_composite.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bc_am_bp_configuration.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bc_am_bp_context.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bc_am_bp_context_clone.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bc_am_bp_data_model_clone.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bc_am_bp_edit_template_details.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bc_am_bp_email_component.Designer.vb">
+      <DependentUpon>bc_am_bp_email_component.vb</DependentUpon>
+    </Compile>
+    <Compile Include="bc_am_bp_email_component.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bc_am_bp_main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bc_am_bp_parameters.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bc_am_bp_publication_type.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bc_am_bp_pub_type_params.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bc_am_bp_pub_type_selector.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bc_am_bp_registered_tables.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bc_am_bp_register_table.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bc_am_bp_template_components.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bc_am_bp_update_registered_table.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bc_am_component.vb" />
+    <Compile Include="bc_am_composite.vb" />
+    <Compile Include="bc_am_configuration.vb" />
+    <Compile Include="bc_am_publication.vb" />
+    <Compile Include="bc_am_template.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="bc_am_bp_about.resx">
+      <DependentUpon>bc_am_bp_about.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bc_am_bp_add_label.resx">
+      <DependentUpon>bc_am_bp_add_label.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bc_am_bp_advanced.resx">
+      <DependentUpon>bc_am_bp_advanced.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bc_am_bp_clone.resx">
+      <DependentUpon>bc_am_bp_clone.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bc_am_bp_component.resx">
+      <DependentUpon>bc_am_bp_component.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bc_am_bp_component_clone.resx">
+      <DependentUpon>bc_am_bp_component_clone.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bc_am_bp_composite.resx">
+      <DependentUpon>bc_am_bp_composite.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bc_am_bp_configuration.resx">
+      <DependentUpon>bc_am_bp_configuration.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bc_am_bp_context.resx">
+      <DependentUpon>bc_am_bp_context.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bc_am_bp_context_clone.resx">
+      <DependentUpon>bc_am_bp_context_clone.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bc_am_bp_data_model_clone.resx">
+      <DependentUpon>bc_am_bp_data_model_clone.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bc_am_bp_edit_template_details.resx">
+      <DependentUpon>bc_am_bp_edit_template_details.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bc_am_bp_email_component.resx">
+      <DependentUpon>bc_am_bp_email_component.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bc_am_bp_main.resx">
+      <DependentUpon>bc_am_bp_main.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bc_am_bp_parameters.resx">
+      <DependentUpon>bc_am_bp_parameters.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bc_am_bp_publication_type.resx">
+      <DependentUpon>bc_am_bp_publication_type.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bc_am_bp_pub_type_params.resx">
+      <DependentUpon>bc_am_bp_pub_type_params.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bc_am_bp_pub_type_selector.resx">
+      <DependentUpon>bc_am_bp_pub_type_selector.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bc_am_bp_registered_tables.resx">
+      <DependentUpon>bc_am_bp_registered_tables.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bc_am_bp_register_table.resx">
+      <DependentUpon>bc_am_bp_register_table.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bc_am_bp_template_components.resx">
+      <DependentUpon>bc_am_bp_template_components.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bc_am_bp_update_registered_table.resx">
+      <DependentUpon>bc_am_bp_update_registered_table.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BC.snk" />
+    <None Include="BlueCurveV5.pfx" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

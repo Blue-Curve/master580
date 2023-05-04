@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="494f8e62-440b-4146-a164-fca2e2da7077" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/BlueCurve.Core.WCF/BlueCurveWS.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="BlueCurveWCF.wsdl" MetadataType="Wsdl" ID="35d3b08d-258b-45b6-96ff-d51c0c6745c0" SourceId="1" SourceUrl="http://localhost/BlueCurve.Core.WCF/BlueCurveWS.svc?wsdl" />
+    <MetadataFile FileName="BlueCurveWS.xsd" MetadataType="Schema" ID="ef0a9660-fded-49e1-bf06-198795ec9aa7" SourceId="1" SourceUrl="http://localhost/BlueCurve.Core.WCF/BlueCurveWS.svc?xsd=xsd0" />
+    <MetadataFile FileName="BlueCurveWS.disco" MetadataType="Disco" ID="91f28411-f750-4e00-b251-2c6d06b96412" SourceId="1" SourceUrl="http://localhost/BlueCurve.Core.WCF/BlueCurveWS.svc?disco" />
+    <MetadataFile FileName="BlueCurveWS1.xsd" MetadataType="Schema" ID="d82adb3f-be39-4d5f-8f36-99925e4a51e1" SourceId="1" SourceUrl="http://localhost/BlueCurve.Core.WCF/BlueCurveWS.svc?xsd=xsd1" />
+    <MetadataFile FileName="BlueCurveWS2.xsd" MetadataType="Schema" ID="2f24e743-744f-4185-9248-43b9f374cc6c" SourceId="1" SourceUrl="http://localhost/BlueCurve.Core.WCF/BlueCurveWS.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

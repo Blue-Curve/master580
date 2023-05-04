@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/bc_core_components_objects" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/bc_core_components_objects" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="SYSTEM_DEFINED">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NONE" />
+      <xs:enumeration value="SET" />
+      <xs:enumeration value="RUNTIME" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="SYSTEM_DEFINED" nillable="true" type="tns:SYSTEM_DEFINED" />
+</xs:schema>

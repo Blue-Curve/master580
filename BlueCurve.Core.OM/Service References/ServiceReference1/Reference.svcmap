@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="88daf33c-be7f-417c-a425-bc6338bef1e9" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/bc_core_components_svc/components.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Components.xsd" MetadataType="Schema" ID="75721fc8-0897-4de1-8ae4-3f5bb14190c3" SourceId="1" SourceUrl="http://localhost/bc_core_components_svc/Components.svc?xsd=xsd3" />
+    <MetadataFile FileName="ComponentsService.wsdl" MetadataType="Wsdl" ID="caa49b14-6c7b-4a9b-8dfc-6d4f2cde8b1d" SourceId="1" SourceUrl="http://localhost/bc_core_components_svc/Components.svc?wsdl" />
+    <MetadataFile FileName="Components1.xsd" MetadataType="Schema" ID="d440ad9a-d166-4b67-abae-9fb07487038b" SourceId="1" SourceUrl="http://localhost/bc_core_components_svc/Components.svc?xsd=xsd2" />
+    <MetadataFile FileName="Components.disco" MetadataType="Disco" ID="1d02d930-d99b-44a9-b928-f631ea65f1dd" SourceId="1" SourceUrl="http://localhost/bc_core_components_svc/Components.svc?disco" />
+    <MetadataFile FileName="Components2.xsd" MetadataType="Schema" ID="ee98ef2d-dcf0-4df2-9326-eaa0add350e6" SourceId="1" SourceUrl="http://localhost/bc_core_components_svc/Components.svc?xsd=xsd0" />
+    <MetadataFile FileName="Components3.xsd" MetadataType="Schema" ID="39fa42df-3c62-4087-aff8-69024400b9ce" SourceId="1" SourceUrl="http://localhost/bc_core_components_svc/Components.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

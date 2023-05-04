@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="bc_core_components_svc.AjaxComponentsService" CodeBehind="Ajax.svc.cs" %>

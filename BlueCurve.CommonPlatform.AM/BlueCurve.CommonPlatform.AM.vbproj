@@ -1,0 +1,434 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3C10C1F9-D43B-4E47-A3D1-B3EF5364C052}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>BlueCurve.CommonPlatform.AM</RootNamespace>
+    <AssemblyName>BlueCurve.CommonPlatform.AM</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>BC.snk</AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\Build Directory\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>None</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Build Directory\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BlueCurve.Core.AS, Version=5.8.0.0, Culture=neutral, PublicKeyToken=d81d09111dbc37cc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Build Directory\Debug\BlueCurve.Core.AS.dll</HintPath>
+    </Reference>
+    <Reference Include="BlueCurve.Core.CS, Version=5.6.0.0, Culture=neutral, PublicKeyToken=dd79d4bfee48f542, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Build Directory\Debug\BlueCurve.Core.CS.dll</HintPath>
+    </Reference>
+    <Reference Include="BlueCurve.Core.OM, Version=5.3.8.0, Culture=neutral, PublicKeyToken=dd79d4bfee48f542, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Build Directory\Debug\BlueCurve.Core.OM.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Program Files (x86)\DevExpress 13.2\Components\Bin\Framework\DevExpress.BonusSkins.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bc_am_attribute_audit.Designer.vb">
+      <DependentUpon>bc_am_attribute_audit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="bc_am_attribute_audit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bc_am_audit_entity_links.Designer.vb">
+      <DependentUpon>bc_am_audit_entity_links.vb</DependentUpon>
+    </Compile>
+    <Compile Include="bc_am_audit_entity_links.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bc_am_cp_about.Designer.vb">
+      <DependentUpon>bc_am_cp_about.vb</DependentUpon>
+    </Compile>
+    <Compile Include="bc_am_cp_about.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bc_am_cp_assign.Designer.vb">
+      <DependentUpon>bc_am_cp_assign.vb</DependentUpon>
+    </Compile>
+    <Compile Include="bc_am_cp_assign.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bc_am_cp_container.Designer.vb">
+      <DependentUpon>bc_am_cp_container.vb</DependentUpon>
+    </Compile>
+    <Compile Include="bc_am_cp_container.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bc_am_cp_deploy.Designer.vb">
+      <DependentUpon>bc_am_cp_deploy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="bc_am_cp_deploy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bc_am_cp_distribution.Designer.vb">
+      <DependentUpon>bc_am_cp_distribution.vb</DependentUpon>
+    </Compile>
+    <Compile Include="bc_am_cp_distribution.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bc_am_cp_edit.Designer.vb">
+      <DependentUpon>bc_am_cp_edit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="bc_am_cp_edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bc_am_cp_monitor.Designer.vb">
+      <DependentUpon>bc_am_cp_monitor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="bc_am_cp_monitor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bc_am_cp_translation.Designer.vb">
+      <DependentUpon>bc_am_cp_translation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="bc_am_cp_translation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bc_am_cp_main.designer.vb">
+      <DependentUpon>bc_am_cp_main.vb</DependentUpon>
+    </Compile>
+    <Compile Include="bc_am_cp_main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bc_am_cp_pub_type.Designer.vb">
+      <DependentUpon>bc_am_cp_pub_type.vb</DependentUpon>
+    </Compile>
+    <Compile Include="bc_am_cp_pub_type.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bc_am_cp_users.Designer.vb">
+      <DependentUpon>bc_am_cp_users.vb</DependentUpon>
+    </Compile>
+    <Compile Include="bc_am_cp_users.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bc_am_dx_date.designer.vb">
+      <DependentUpon>bc_am_dx_date.vb</DependentUpon>
+    </Compile>
+    <Compile Include="bc_am_dx_date.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bc_am_entity_user_audit.Designer.vb">
+      <DependentUpon>bc_am_entity_user_audit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="bc_am_entity_user_audit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bc_am_monitor.vb" />
+    <Compile Include="bc_am_picture_attribue.Designer.vb">
+      <DependentUpon>bc_am_picture_attribue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="bc_am_picture_attribue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bc_am_translation.vb" />
+    <Compile Include="bc_am_pubtype.vb" />
+    <Compile Include="bc_am_taxonomy.vb" />
+    <Compile Include="bc_am_users.vb" />
+    <Compile Include="bc_am_cp_text_edit.Designer.vb">
+      <DependentUpon>bc_am_cp_text_edit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="bc_am_cp_text_edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bc_dx_html_task_comment.Designer.vb">
+      <DependentUpon>bc_dx_html_task_comment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="bc_dx_html_task_comment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bc_dx_maintain_task.Designer.vb">
+      <DependentUpon>bc_dx_maintain_task.vb</DependentUpon>
+    </Compile>
+    <Compile Include="bc_dx_maintain_task.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bc_dx_popup1.designer.vb">
+      <DependentUpon>bc_dx_popup1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="bc_dx_popup1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bc_dx_step_attribute.Designer.vb">
+      <DependentUpon>bc_dx_step_attribute.vb</DependentUpon>
+    </Compile>
+    <Compile Include="bc_dx_step_attribute.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bc_dx_task_history.Designer.vb">
+      <DependentUpon>bc_dx_task_history.vb</DependentUpon>
+    </Compile>
+    <Compile Include="bc_dx_task_history.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bc_dx_task_schedule.Designer.vb">
+      <DependentUpon>bc_dx_task_schedule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="bc_dx_task_schedule.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ColumnExtenstion.vb" />
+    <Compile Include="dx_uc_attributes.designer.vb">
+      <DependentUpon>dx_uc_attributes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dx_uc_attributes.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="bc_am_attribute_audit.resx">
+      <DependentUpon>bc_am_attribute_audit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bc_am_audit_entity_links.resx">
+      <DependentUpon>bc_am_audit_entity_links.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bc_am_cp_about.resx">
+      <DependentUpon>bc_am_cp_about.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bc_am_cp_assign.resx">
+      <DependentUpon>bc_am_cp_assign.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bc_am_cp_container.resx">
+      <DependentUpon>bc_am_cp_container.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bc_am_cp_deploy.resx">
+      <DependentUpon>bc_am_cp_deploy.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bc_am_cp_distribution.resx">
+      <DependentUpon>bc_am_cp_distribution.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bc_am_cp_edit.resx">
+      <DependentUpon>bc_am_cp_edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bc_am_cp_monitor.resx">
+      <DependentUpon>bc_am_cp_monitor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bc_am_cp_translation.resx">
+      <DependentUpon>bc_am_cp_translation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bc_am_cp_main.resx">
+      <DependentUpon>bc_am_cp_main.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bc_am_cp_pub_type.resx">
+      <DependentUpon>bc_am_cp_pub_type.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bc_am_cp_users.resx">
+      <DependentUpon>bc_am_cp_users.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bc_am_cp_text_edit.resx">
+      <DependentUpon>bc_am_cp_text_edit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bc_am_dx_date.resx">
+      <DependentUpon>bc_am_dx_date.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bc_am_entity_user_audit.resx">
+      <DependentUpon>bc_am_entity_user_audit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bc_am_picture_attribue.resx">
+      <DependentUpon>bc_am_picture_attribue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bc_dx_html_task_comment.resx">
+      <DependentUpon>bc_dx_html_task_comment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bc_dx_maintain_task.resx">
+      <DependentUpon>bc_dx_maintain_task.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bc_dx_popup1.resx">
+      <DependentUpon>bc_dx_popup1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bc_dx_step_attribute.resx">
+      <DependentUpon>bc_dx_step_attribute.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bc_dx_task_history.resx">
+      <DependentUpon>bc_dx_task_history.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bc_dx_task_schedule.resx">
+      <DependentUpon>bc_dx_task_schedule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dx_uc_attributes.resx">
+      <DependentUpon>dx_uc_attributes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BC.snk" />
+    <None Include="BlueCurveV5.pfx" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\up.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dn.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4CBD-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BlueCurve.Process.AM\BlueCurve.Process.AM.vbproj">
+      <Project>{3C16EDEC-C24E-4E6A-A5F1-E17721A349DB}</Project>
+      <Name>BlueCurve.Process.AM</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Revert_disabled.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

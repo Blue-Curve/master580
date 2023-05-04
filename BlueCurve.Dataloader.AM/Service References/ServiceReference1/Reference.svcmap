@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="deb05fbd-15db-4c4f-b7b1-2356d0f2f595" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/BCIISServices/BCIISServices.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="BCIISServices.wsdl" MetadataType="Wsdl" ID="351b60bf-f15a-4c9f-8f38-65945abd92a1" SourceId="1" SourceUrl="http://localhost/BCIISServices/BCIISServices.svc?wsdl" />
+    <MetadataFile FileName="BCIISServices.xsd" MetadataType="Schema" ID="d830c80b-e8f0-486e-882c-095aaaf60a1c" SourceId="1" SourceUrl="http://localhost/BCIISServices/BCIISServices.svc?xsd=xsd1" />
+    <MetadataFile FileName="BCIISServices1.xsd" MetadataType="Schema" ID="c99e9272-a978-46f1-9f2c-585751dfc9b0" SourceId="1" SourceUrl="http://localhost/BCIISServices/BCIISServices.svc?xsd=xsd0" />
+    <MetadataFile FileName="BCIISServices2.xsd" MetadataType="Schema" ID="3e326452-3da8-4586-97af-ec56fa509c2c" SourceId="1" SourceUrl="http://localhost/BCIISServices/BCIISServices.svc?xsd=xsd3" />
+    <MetadataFile FileName="BCIISServices3.xsd" MetadataType="Schema" ID="04218e75-27f9-49e3-bb45-22d42eb6d526" SourceId="1" SourceUrl="http://localhost/BCIISServices/BCIISServices.svc?xsd=xsd2" />
+    <MetadataFile FileName="BCIISServices.disco" MetadataType="Disco" ID="f0853ed2-f691-4030-b2a8-a5ca4eb32776" SourceId="1" SourceUrl="http://localhost/BCIISServices/BCIISServices.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

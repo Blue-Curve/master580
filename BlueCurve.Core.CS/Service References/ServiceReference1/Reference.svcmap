@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="3bd2e5f0-8d4f-4868-bd60-fb6283d3fc4b" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost//BlueCurve.Soap.5.8.0.0/bluecurvews.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="BlueCurveWS.xsd" MetadataType="Schema" ID="54d3fb55-14d1-4623-8ff6-b0a8c0bdddb9" SourceId="1" SourceUrl="http://localhost/BlueCurve.Soap.5.8.0.0/BlueCurveWS.svc?xsd=xsd4" />
+    <MetadataFile FileName="BlueCurveWS1.xsd" MetadataType="Schema" ID="13bdb889-00d8-4369-903d-e49be777d1ff" SourceId="1" SourceUrl="http://localhost/BlueCurve.Soap.5.8.0.0/BlueCurveWS.svc?xsd=xsd3" />
+    <MetadataFile FileName="BlueCurveWS.disco" MetadataType="Disco" ID="df9f5f9c-aa85-4b29-8e4c-8e616a950ce9" SourceId="1" SourceUrl="http://localhost/BlueCurve.Soap.5.8.0.0/BlueCurveWS.svc?disco" />
+    <MetadataFile FileName="Service1.wsdl" MetadataType="Wsdl" ID="1efad78d-1ada-44b1-bb6f-7873ad174e53" SourceId="1" SourceUrl="http://localhost/BlueCurve.Soap.5.8.0.0/BlueCurveWS.svc?wsdl" />
+    <MetadataFile FileName="BlueCurveWS2.xsd" MetadataType="Schema" ID="02695856-a9ac-4eee-8c6a-4d2359bd4c15" SourceId="1" SourceUrl="http://localhost/BlueCurve.Soap.5.8.0.0/BlueCurveWS.svc?xsd=xsd2" />
+    <MetadataFile FileName="BlueCurveWS3.xsd" MetadataType="Schema" ID="ca7ba0b7-2d26-4084-ae4e-d10f9acb3ea9" SourceId="1" SourceUrl="http://localhost/BlueCurve.Soap.5.8.0.0/BlueCurveWS.svc?xsd=xsd1" />
+    <MetadataFile FileName="BlueCurveWS4.xsd" MetadataType="Schema" ID="ca47a48e-3b03-444f-a883-d038cde04cc1" SourceId="1" SourceUrl="http://localhost/BlueCurve.Soap.5.8.0.0/BlueCurveWS.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

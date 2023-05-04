@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/bc_core_components_svc" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/bc_core_components_svc" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost/bc_core_components_svc/Components.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/bc_core_components_objects" />
+  <xs:complexType name="bc_core_component">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="contributor_id" type="xs:long" />
+      <xs:element minOccurs="0" name="data_at_date" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="entity_id" type="xs:long" />
+      <xs:element minOccurs="0" name="language_id" type="xs:long" />
+      <xs:element minOccurs="0" name="pub_type_id" type="xs:long" />
+      <xs:element minOccurs="0" name="stage_id" type="xs:long" />
+      <xs:element minOccurs="0" name="type" type="xs:int" />
+      <xs:element minOccurs="0" name="user_id" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="bc_core_component" nillable="true" type="tns:bc_core_component" />
+  <xs:complexType name="bc_core_component_parameters">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="lparameters" nillable="true" type="tns:ArrayOfbc_core_component_parameter" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="bc_core_component_parameters" nillable="true" type="tns:bc_core_component_parameters" />
+  <xs:complexType name="ArrayOfbc_core_component_parameter">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="bc_core_component_parameter" nillable="true" type="tns:bc_core_component_parameter" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfbc_core_component_parameter" nillable="true" type="tns:ArrayOfbc_core_component_parameter" />
+  <xs:complexType name="bc_core_component_parameter">
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/bc_core_components_objects" minOccurs="0" name="system_defiend" type="q1:SYSTEM_DEFINED" />
+      <xs:element minOccurs="0" name="value" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="bc_core_component_parameter" nillable="true" type="tns:bc_core_component_parameter" />
+</xs:schema>

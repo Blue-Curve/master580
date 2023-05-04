@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="BlueCurve_Core_CS_localhost1_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/BlueCurve.Authenticate.WS/bc_auth_service.asmx</Value>
+    </Setting>
+    <Setting Name="BlueCurve_Core_CS_wcfadauthenticate_bluecurve_core_ad_wcf" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://prose-pc.bc.local/bluecurve.core.ad.wcf/bluecurve_core_ad_wcf.svc</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfabc_calc_agg">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="abc_calc_agg" nillable="true" type="tns:abc_calc_agg" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfabc_calc_agg" nillable="true" type="tns:ArrayOfabc_calc_agg" />
+  <xs:complexType name="abc_calc_agg">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="calculation_id" type="xs:long" />
+      <xs:element minOccurs="0" name="calenderized_year_offset" type="xs:int" />
+      <xs:element minOccurs="0" name="class_id" type="xs:long" />
+      <xs:element minOccurs="0" name="contributor_1_id" type="xs:long" />
+      <xs:element minOccurs="0" name="contributor_2_id" type="xs:long" />
+      <xs:element minOccurs="0" name="contributor_id" type="xs:int" />
+      <xs:element minOccurs="0" name="dual_entity_id" type="xs:long" />
+      <xs:element minOccurs="0" name="entity_id" type="xs:long" />
+      <xs:element minOccurs="0" name="formula" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="host_curr_id" type="xs:long" />
+      <xs:element minOccurs="0" name="include_in_growthl" type="xs:boolean" />
+      <xs:element minOccurs="0" name="include_in_growthr" type="xs:boolean" />
+      <xs:element minOccurs="0" name="interval" type="xs:int" />
+      <xs:element minOccurs="0" name="interval_type" type="xs:int" />
+      <xs:element minOccurs="0" name="item_id" type="xs:int" />
+      <xs:element minOccurs="0" name="num_years" type="xs:int" />
+      <xs:element minOccurs="0" name="op1_curr_type" type="xs:int" />
+      <xs:element minOccurs="0" name="op2_curr_type" type="xs:int" />
+      <xs:element minOccurs="0" name="op3_curr_type" type="xs:int" />
+      <xs:element minOccurs="0" name="op4_curr_type" type="xs:int" />
+      <xs:element minOccurs="0" name="op5_curr_type" type="xs:int" />
+      <xs:element minOccurs="0" name="op6_curr_type" type="xs:int" />
+      <xs:element minOccurs="0" name="op7_curr_type" type="xs:int" />
+      <xs:element minOccurs="0" name="op8_curr_type" type="xs:int" />
+      <xs:element minOccurs="0" name="operand_1_id" type="xs:long" />
+      <xs:element minOccurs="0" name="operand_1_is_weight" type="xs:boolean" />
+      <xs:element minOccurs="0" name="operand_2_id" type="xs:long" />
+      <xs:element minOccurs="0" name="operand_2_is_weight" type="xs:boolean" />
+      <xs:element minOccurs="0" name="operand_3_id" type="xs:long" />
+      <xs:element minOccurs="0" name="operand_3_is_weight" type="xs:boolean" />
+      <xs:element minOccurs="0" name="operand_4_id" type="xs:long" />
+      <xs:element minOccurs="0" name="operand_4_is_weight" type="xs:boolean" />
+      <xs:element minOccurs="0" name="operand_5_id" type="xs:long" />
+      <xs:element minOccurs="0" name="operand_5_is_weight" type="xs:boolean" />
+      <xs:element minOccurs="0" name="operand_6_id" type="xs:long" />
+      <xs:element minOccurs="0" name="operand_6_is_weight" type="xs:boolean" />
+      <xs:element minOccurs="0" name="operand_7_id" type="xs:long" />
+      <xs:element minOccurs="0" name="operand_7_is_weight" type="xs:boolean" />
+      <xs:element minOccurs="0" name="operand_8_id" type="xs:long" />
+      <xs:element minOccurs="0" name="operand_8_is_weight" type="xs:boolean" />
+      <xs:element minOccurs="0" name="parent_entity_id" type="xs:long" />
+      <xs:element minOccurs="0" name="period_end_date" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="period_id" type="xs:int" />
+      <xs:element minOccurs="0" name="raw_value_1" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="raw_value_1_1" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="raw_value_2" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="raw_value_2_1" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="raw_value_3" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="raw_value_3_1" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="raw_value_4" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="raw_value_4_1" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="raw_value_5" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="raw_value_5_1" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="raw_value_6" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="raw_value_6_1" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="raw_value_7" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="raw_value_7_1" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="raw_value_8" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="raw_value_8_1" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="result_row_id" type="xs:long" />
+      <xs:element minOccurs="0" name="target_entity_id" type="xs:long" />
+      <xs:element minOccurs="0" name="value_1" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="value_2" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="value_3" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="value_4" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="value_5" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="value_6" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="value_7" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="value_8" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="value_8_1" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="weighting" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="workflow_stage" type="xs:int" />
+      <xs:element minOccurs="0" name="year" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="abc_calc_agg" nillable="true" type="tns:abc_calc_agg" />
+  <xs:complexType name="ArrayOfagg_result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="agg_result" nillable="true" type="tns:agg_result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfagg_result" nillable="true" type="tns:ArrayOfagg_result" />
+  <xs:complexType name="agg_result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="audit_id" type="xs:long" />
+      <xs:element minOccurs="0" name="contributor_1_id" type="xs:long" />
+      <xs:element minOccurs="0" name="contributor_2_id" type="xs:long" />
+      <xs:element minOccurs="0" name="contributor_id" type="xs:int" />
+      <xs:element minOccurs="0" name="currency" type="xs:long" />
+      <xs:element minOccurs="0" name="dual_entity_id" type="xs:long" />
+      <xs:element minOccurs="0" name="exch_type" type="xs:int" />
+      <xs:element minOccurs="0" name="item_id" type="xs:long" />
+      <xs:element minOccurs="0" name="lvalue" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="num_years" type="xs:int" />
+      <xs:element minOccurs="0" name="period_id" type="xs:int" />
+      <xs:element minOccurs="0" name="rvalue" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="target_entity_id" type="xs:long" />
+      <xs:element minOccurs="0" name="universe_id" type="xs:long" />
+      <xs:element minOccurs="0" name="value" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="workflow_stage" type="xs:int" />
+      <xs:element minOccurs="0" name="year" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="agg_result" nillable="true" type="tns:agg_result" />
+  <xs:complexType name="ArrayOfttest_result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ttest_result" nillable="true" type="tns:ttest_result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfttest_result" nillable="true" type="tns:ArrayOfttest_result" />
+  <xs:complexType name="ttest_result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="contributor_id" type="xs:int" />
+      <xs:element minOccurs="0" name="eff_number" type="xs:double" />
+      <xs:element minOccurs="0" name="item_id" type="xs:long" />
+      <xs:element minOccurs="0" name="mean" type="xs:decimal" />
+      <xs:element minOccurs="0" name="num_points" type="xs:int" />
+      <xs:element minOccurs="0" name="period_id" type="xs:int" />
+      <xs:element minOccurs="0" name="sd3" type="xs:double" />
+      <xs:element minOccurs="0" name="standard_deviation" type="xs:double" />
+      <xs:element minOccurs="0" name="style_calculation_type" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="total_weight" type="xs:decimal" />
+      <xs:element minOccurs="0" name="weighted_mean" type="xs:double" />
+      <xs:element minOccurs="0" name="workflow_stage" type="xs:int" />
+      <xs:element minOccurs="0" name="year" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ttest_result" nillable="true" type="tns:ttest_result" />
+</xs:schema>

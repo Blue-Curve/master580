@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<currentlysyncedtablesfields>
+    <tablename name="company" classname="company_abg_financial">
+        <field table="company" property="CompanyId" subobject="" paramname="CompanyId" paramtype="integer"/>
+        <field table="company" property="Name" subobject="" paramname="CompanyFullName" paramtype="string"/>
+         <field table="company" property="Official" subobject="" paramname="IsOfficial" paramtype="Bolean"/>
+         <field table="company" property="CountryId" subobject="Country" paramname="CountryId" paramtype="integer"/>
+         <field table="company" property="Gicssubindustrycode" subobject="GICSSubIndustry" paramname="GICSSubIndustryCode" paramtype="string"/>
+         <field table="company" property="Gicsindustrycode" subobject="GICSSubIndustry" paramname="GICSIndustryCode" paramtype="string"/>
+         <field table="company" property="Gicsindustrygroupcode" subobject="GICSSubIndustry" paramname="GICSIndustryGroupCode" paramtype="string"/>
+         <field table="company" property="Gicssectorcode" subobject="GICSSubIndustry" paramname="GICSSectorCode" paramtype="string"/>
+         <field table="company" property="CurrencyId" subobject="Currency" paramname="CurrencyId" paramtype="string"/>
+	       <field table="company" property="AccountingModelId" subobject="" paramname="AccountingModelId" paramtype="string"/>
+         <field table="company" property="riccode" subobject="" paramname="ReuterCode" paramtype="string"/>
+         <field table="company" property="bloomberg" subobject="" paramname="BloombergCode" paramtype="string"/>
+         <field table="company" property="isincode" subobject="" paramname="ISINCode" paramtype="string"/>
+    </tablename>
+     <tablename name="country" classname="country_abg_financial">
+    <field table="country" property="countryid" subobject="" paramname="CountryId" paramtype="string"/>
+    <field table="country" property="country" subobject="" paramname="CountryName" paramtype="string"/>
+    <field table="country" property="countrycode" subobject="" paramname="CountryCode" paramtype="string"/>   
+   </tablename>
+  <tablename name ="user" classname="user_abg_financial">
+  <field table="user" property="userid" subobject="" paramname="UserId" paramtype="string"/>
+    <field table="user" property="username" subobject="" paramname="UserName" paramtype="string"/>
+    <field table="user" property="usertypeid" subobject="UserType" paramname="UserTypeId" paramtype="string"/>
+    <field table="user" property="userfirstname" subobject="" paramname="UserFirstName" paramtype="string"/>
+    <field table="user" property="userlastname" subobject="" paramname="UserLastName" paramtype="string"/>
+    <field table="user" property="usertelephoneno" subobject="" paramname="UserTelephoneNo" paramtype="string"/>
+    <field table="user" property="officeid" subobject="UserOffice" paramname="OfficeId" paramtype="string"/>
+  </tablename>
+  <tablename name="companyanalyst" classname="companyanalyst_abg_financial">
+    <field table="companyanalyst" property="userid" subobject="" paramname="UserId" paramtype="string"/>
+     <field table="companyanalyst" property="username" subobject="" paramname="UserName" paramtype="string"/>
+  </tablename>
+  <tablename name ="usertype" classname="usertype_abg_financial">
+    <field table="usertype" property="usertypeid" subobject="" paramname="UserTypeId" paramtype="string"/>
+    <field table="usertype" property="usertypename" subobject="" paramname="UserTypeName" paramtype="string"/>
+  </tablename>
+  <tablename name ="gicssector" classname="gicssector_abg_financial">
+    <field table="gicssector" property="subindustrycode" subobject="" paramname="GICSSubIndustryCode" paramtype="string"/>
+    <field table="gicssector" property="industry" subobject="" paramname="GICSIndustryName" paramtype="string"/>
+    <field table="gicssector" property="subindustry" subobject="" paramname="GICSSubIndustryName" paramtype="string"/>
+  </tablename>
+  <tablename name="pubtype" classname="pubtype_abg_financial">
+    <field table="pubtype" property="pubtypeid" subobject="" paramname="pub_type_id" paramtype="integer"/>
+    <field table="pubtype" property="pubtypename" subobject="" paramname="pub_type_name" paramtype="string"/>
+  </tablename>
+  <tablename name="extcomponent" classname="extcomponent_abg_financial">
+    <field table="extcomponent" property="componentid" subobject="" paramname="InfoGroupId" paramtype="integer"/>
+    <field table="extcomponent" property="componentname" subobject="" paramname="InfoGroupName" paramtype="string"/>  
+  </tablename>
+  <tablename name="currency" classname="currency_abg_financial">
+    <field table="currency" property="code" subobject="" paramname="CurrencyName" paramtype="string"/>
+    <field table="currency" property="longname" subobject="" paramname="CurrencyLong" paramtype="string"/>
+    <field table="currency" property="shortname" subobject="" paramname="CurrencyShort" paramtype="string"/>
+  </tablename>
+  <tablename name="office" classname="office_abg_financial">
+     <field table="office" property="officename" subobject="" paramname="OfficeName" paramtype="string"/>
+  </tablename>
+  <tablename name="account" classname="account_abg_financial">
+     <field table="account" property="AccountingModelId" subobject="" paramname="AccountingModelId" paramtype="string"/>
+     <field table="account" property="AccountingModelName" subobject="" paramname="AccountingModelName" paramtype="string"/>
+  </tablename>
+</currentlysyncedtablesfields>

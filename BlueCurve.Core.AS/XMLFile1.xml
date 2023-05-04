@@ -1,0 +1,581 @@
+﻿<Publication>
+	<DocumentDetails>
+		<DOC_ID>101496</DOC_ID>
+		<PublishedDate>Dec 15 2011  6:15PM</PublishedDate>
+		<PublicationType>Company Comment</PublicationType>
+		<FileName>101496.pdf</FileName>
+		<Title><![CDATA[dd]]></Title>
+		<SubTitle><![CDATA[]]></SubTitle>
+		<Summary><![CDATA[]]></Summary>
+	</DocumentDetails>
+	<entities>
+		<entity BMOid="ANF@US">
+			<name>Abercrombie amp; Fitch</name>
+			<class>Instrument</class>
+			<entityid>7003</entityid>
+			<FinancialData>
+				<stage>Publish</stage>
+				<contributor>Internal</contributor>
+				<StaticData>
+					<item name="@Restricted">N</item>
+					<item name="Bloomberg Code">ANF@US</item>
+					<item name="Covered">1</item>
+					<item name="Currency">USD</item>
+					<item name="Currency">USD</item>
+					<item name="Disclosure Image">ET=CA</item>
+					<item name="Disclosure Meth Text">BMO</item>
+					<item name="Disclosure Risk Text">BMO</item>
+					<item name="Disclosure Text File">ET=CA</item>
+					<item name="Gray List">N</item>
+					<item name="Price Image">ET=CA</item>
+					<item name="Share Type">Equity</item>
+					<item name="Trading Currency">USD</item>
+				</StaticData>
+				<PeriodData></PeriodData>
+			</FinancialData>
+		</entity>
+		<entity BMOid="AKR@US">
+			<name>Acadia Realty Trust</name>
+			<class>Instrument</class>
+			<entityid>7007</entityid>
+			<FinancialData>
+				<stage>Publish</stage>
+				<contributor>Internal</contributor>
+				<StaticData>
+					<item name="@Restricted">N</item>
+					<item name="Bloomberg Code">AKR@US</item>
+					<item name="Covered">1</item>
+					<item name="Currency">USD</item>
+					<item name="Currency">USD</item>
+					<item name="Disclosure Image">ET=CA</item>
+					<item name="Disclosure Meth Text">BMO</item>
+					<item name="Disclosure Risk Text">BMO</item>
+					<item name="Disclosure Text File">ET=CA</item>
+					<item name="Gray List">N</item>
+					<item name="Price Image">ET=CA</item>
+					<item name="Share Type">Equity</item>
+					<item name="Trading Currency">USD</item>
+				</StaticData>
+				<PeriodData></PeriodData>
+			</FinancialData>
+		</entity>
+		<entity BMOid="ET@CN">
+			<name>Evertz Technologies</name>
+			<class>Instrument</class>
+			<entityid>7444</entityid>
+			<FinancialData>
+				<stage>Publish</stage>
+				<contributor>Internal</contributor>
+				<StaticData>
+					<item name="@Restricted">N</item>
+					<item name="Bloomberg Code">ET@CN</item>
+					<item name="Company Notes"></item>
+					<item name="Covered">1</item>
+					<item name="Currency">CDN</item>
+					<item name="Currency">CDN</item>
+					<item name="Disclosure Image">ET=CA</item>
+					<item name="Disclosure Meth Text">BMO</item>
+					<item name="Disclosure Risk Text">BMO</item>
+					<item name="Disclosure Text File">ET=CA</item>
+					<item name="Disclosure Text File">ET=CA</item>
+					<item name="Free float">100.000000000000</item>
+					<item name="Free Float (Number of Shares)">100000000000.000000000000000</item>
+					<item name="Free Float (Value)">0.000000000000000</item>
+					<item name="Gray List">N</item>
+					<item name="Industry Rating">Test</item>
+					<item name="Intraday Price"></item>
+					<item name="Last Balance Sheet Date"></item>
+					<item name="Last Published Date"></item>
+					<item name="Major Shareholder 1 % Held">1.000000000000</item>
+					<item name="Major Shareholder 1 Name">L</item>
+					<item name="Major Shareholder 2 % Held">2.000000000000</item>
+					<item name="Major Shareholder 2 Name">S</item>
+					<item name="Major Shareholder 3 % Held">3.000000000000</item>
+					<item name="Major Shareholder 3 Name">M</item>
+					<item name="Major Shareholder 4 % Held">4.000000000000</item>
+					<item name="Major Shareholder 4 Name">T</item>
+					<item name="Major Shareholder 5 % Held">5.000000000000</item>
+					<item name="Major Shareholder 5 Name">A</item>
+					<item name="Market Capitalisation (Static)">0.000000000000000</item>
+					<item name="Market Capitalisation (Static)">0.00000000000</item>
+					<item name="Next Reporting Date"></item>
+					<item name="Price">182</item>
+					<item name="Price 52 Week High">n/a</item>
+					<item name="Price 52 Week Low">n/a</item>
+					<item name="Price Image">ET=CA</item>
+					<item name="Price Performance Absolute 12m">n/a</item>
+					<item name="Price Performance Absolute 1m">n/a</item>
+					<item name="Price Performance Absolute 3m">n/a</item>
+					<item name="Price Performance Absolute 6m">n/a</item>
+					<item name="Primary Metric">1008</item>
+					<item name="Primary Metric">EPS</item>
+					<item name="Rating">Market Perform</item>
+					<item name="Secondary Metric">CFPS</item>
+					<item name="Secondary Metric">1011</item>
+					<item name="Share Type">Equity</item>
+					<item name="Shares Outstanding">1000000000.000000000000</item>
+					<item name="Stock Rating">Outperform</item>
+					<item name="Target price">100.000000000000</item>
+					<item name="Top 15 Membership"></item>
+					<item name="Trading Currency">CDN</item>
+				</StaticData>
+				<PeriodData>
+					<item name="Dividend Yield">
+						<year2009>
+							<q1>n/a</q1>
+							<q2>n/a</q2>
+							<q3>n/a</q3>
+							<q4>n/a</q4>
+							<fy>n/a</fy>
+						</year2009>
+						<year2010>
+							<q1>n/a</q1>
+							<q2>n/a</q2>
+							<q3>n/a</q3>
+							<q4>n/a</q4>
+							<fy>n/a</fy>
+						</year2010>
+						<year2011>
+							<q1>n/a</q1>
+							<q2>n/a</q2>
+							<q3>n/a</q3>
+							<q4>n/a</q4>
+							<fy>n/a</fy>
+						</year2011>
+						<year2012>
+							<q1>n/a</q1>
+							<q2>n/a</q2>
+							<q3>n/a</q3>
+							<q4>n/a</q4>
+							<fy>n/a</fy>
+						</year2012>
+						<year2013>
+							<q1>n/a</q1>
+							<q2>n/a</q2>
+							<q3>n/a</q3>
+							<q4>n/a</q4>
+							<fy>n/a</fy>
+						</year2013>
+					</item>
+					<item name="Earnings Per Share (GAAP)">
+						<year2009>
+							<q1>0.205206827741</q1>
+							<q2>0.920104744271</q2>
+							<q3>0.423842258251</q3>
+							<q4>0.448262654856</q4>
+							<fy>0.827182195862</fy>
+						</year2009>
+						<year2010>
+							<q1>0.459546147258</q1>
+							<q2>0.864805993509</q2>
+							<q3>0.200097492262</q3>
+							<q4>0.628399176361</q4>
+							<fy>0.784265504695</fy>
+						</year2010>
+						<year2011>
+							<q1>0.417814094895</q1>
+							<q2>0.770276042403</q2>
+							<q3>0.816145474988</q3>
+							<q4>0.246458963649</q4>
+							<fy>0.411758741334</fy>
+						</year2011>
+						<year2012>
+							<q1>0.312911753233</q1>
+							<q2>0.809978456382</q2>
+							<q3>0.483628047411</q3>
+							<q4>0.806361168800</q4>
+							<fy>0.151462015515</fy>
+						</year2012>
+						<year2013>
+							<q1>0.121034618668</q1>
+							<q2>0.156598732201</q2>
+							<q3>0.088177031440</q3>
+							<q4>0.311493731745</q4>
+							<fy>0.495398221110</fy>
+						</year2013>
+					</item>
+					<item name="EBITDA/Interest Expense">
+						<year2010>
+							<q1>1.074577180000000</q1>
+							<q2>1.595299580000000</q2>
+							<q3>2.770569740000000</q3>
+							<q4>1.544990270000000</q4>
+							<fy>3.143769940000000</fy>
+						</year2010>
+						<year2011>
+							<q1>1.261680830000000</q1>
+							<q2>1.238676660000000</q2>
+							<q3>0.785672800000000</q3>
+							<q4>0.587175370000000</q4>
+							<fy>7.866523460000000</fy>
+						</year2011>
+						<year2012>
+							<q1>1.189700040000000</q1>
+							<q2>1.208220030000000</q2>
+							<q3>1.790225490000000</q3>
+							<q4>0.019942970000000</q4>
+							<fy>4.174187840000000</fy>
+						</year2012>
+					</item>
+					<item name="Enterprise Value">
+						<year2010>
+							<q1>467322.555612895000000</q1>
+							<q2>647510.962742575000000</q2>
+							<q3>724257.548885377000000</q3>
+							<q4>990286.806687671000000</q4>
+							<fy>523924.307970973000000</fy>
+						</year2010>
+						<year2011>
+							<q1>771161.938118329000000</q1>
+							<q2>410483.855519908000000</q2>
+							<q3>335224.610230831000000</q3>
+							<q4>85080.237397359000000</q4>
+							<fy>664947.031831059000000</fy>
+						</year2011>
+						<year2012>
+							<q1>367880.899988783000000</q1>
+							<q2>558371.577232882000000</q2>
+							<q3>1113.894407480000000</q3>
+							<q4>277689.064108850000000</q4>
+							<fy>86087.619490564000000</fy>
+						</year2012>
+					</item>
+					<item name="EPS">
+						<year2009>
+							<q1>0.724943294273</q1>
+							<q2>0.107805939653</q2>
+							<q3>0.517745279743</q3>
+							<q4>0.900065071254</q4>
+							<fy>0.407435355030</fy>
+						</year2009>
+						<year2010>
+							<q1>0.911321204110</q1>
+							<q2>0.392962191744</q2>
+							<q3>0.545018269461</q3>
+							<q4>0.871966118439</q4>
+							<fy>0.719685766155</fy>
+						</year2010>
+						<year2011>
+							<q1>0.742976579931</q1>
+							<q2>0.261305484879</q2>
+							<q3>0.337977206945</q3>
+							<q4>0.555715984945</q4>
+							<fy>0.358350038330</fy>
+						</year2011>
+						<year2012>
+							<q1>0.642673757684</q1>
+							<q2>0.864585589818</q2>
+							<q3>0.180730507308</q3>
+							<q4>0.384883066823</q4>
+							<fy>0.718079901048</fy>
+						</year2012>
+						<year2013>
+							<q1>0.864472954242</q1>
+							<q2>0.432525573420</q2>
+							<q3>0.052726590120</q3>
+							<q4>0.825847147827</q4>
+							<fy>0.195257994098</fy>
+						</year2013>
+					</item>
+					<item name="EV/EBITDA">
+						<year2010>
+							<q1>0.924655230000000</q1>
+							<q2>0.715474730000000</q2>
+							<q3>1.281303800000000</q3>
+							<q4>3.753052210000000</q4>
+							<fy>0.776221630000000</fy>
+						</year2010>
+						<year2011>
+							<q1>1.022666710000000</q1>
+							<q2>0.461970920000000</q2>
+							<q3>0.537228120000000</q3>
+							<q4>0.511984930000000</q4>
+							<fy>3.235569540000000</fy>
+						</year2011>
+						<year2012>
+							<q1>0.424484990000000</q1>
+							<q2>1.021604140000000</q2>
+							<q3>0.002536460000000</q3>
+							<q4>15.386744650000000</q4>
+							<fy>0.087327870000000</fy>
+						</year2012>
+					</item>
+					<item name="EV/Revenue">
+						<year2010>
+							<q1>3.601801970000000</q1>
+							<q2>7.895424430000000</q2>
+							<q3>1.947597060000000</q3>
+							<q4>0.990474600000000</q4>
+							<fy>0.540001450000000</fy>
+						</year2010>
+						<year2011>
+							<q1>1.198684130000000</q1>
+							<q2>0.839859610000000</q2>
+							<q3>3.921262130000000</q3>
+							<q4>0.114839800000000</q4>
+							<fy>27.113254210000000</fy>
+						</year2011>
+						<year2012>
+							<q1>0.389451500000000</q1>
+							<q2>0.660714620000000</q2>
+							<q3>0.058537740000000</q3>
+							<q4>0.407406770000000</q4>
+							<fy>0.124178600000000</fy>
+						</year2012>
+					</item>
+					<item name="Financial period end date">
+						<year2009>
+							<q1>31/12/2009</q1>
+							<q2>31/12/2009</q2>
+							<q3>31/12/2009</q3>
+							<q4>31/12/2009</q4>
+							<fy>31/12/2009</fy>
+						</year2009>
+						<year2010>
+							<q1>31/12/2010</q1>
+							<q2>31/12/2010</q2>
+							<q3>31/12/2010</q3>
+							<q4>31/12/2010</q4>
+							<fy>31/12/2010</fy>
+						</year2010>
+						<year2011>
+							<q1>31/12/2011</q1>
+							<q2>31/12/2011</q2>
+							<q3>31/12/2011</q3>
+							<q4>31/12/2011</q4>
+							<fy>31/12/2011</fy>
+						</year2011>
+						<year2012>
+							<q1>31/12/2012</q1>
+							<q2>31/12/2012</q2>
+							<q3>31/12/2012</q3>
+							<q4>31/12/2012</q4>
+							<fy>31/12/2012</fy>
+						</year2012>
+						<year2013>
+							<q1>31/12/2013</q1>
+							<q2>31/12/2013</q2>
+							<q3>31/12/2013</q3>
+							<q4>31/12/2013</q4>
+							<fy>31/12/2013</fy>
+						</year2013>
+					</item>
+					<item name="Gross Margin">
+						<year2010>
+							<q1>0.755023012776</q1>
+							<q2>0.324997356665</q2>
+							<q3>0.767352798543</q3>
+							<q4>0.356061611851</q4>
+							<fy>0.134703266646</fy>
+						</year2010>
+						<year2011>
+							<q1>0.698478060036</q1>
+							<q2>0.890267204779</q2>
+							<q3>0.802908167648</q3>
+							<q4>0.468754278438</q4>
+							<fy>0.461417985034</fy>
+						</year2011>
+						<year2012>
+							<q1>0.699412018089</q1>
+							<q2>0.279076001737</q2>
+							<q3>0.174509891288</q3>
+							<q4>0.527278716821</q4>
+							<fy>0.581513837532</fy>
+						</year2012>
+					</item>
+					<item name="Net Debt/Market Capitalisation">
+						<year2010>
+							<q1>n/a</q1>
+							<q2>n/a</q2>
+							<q3>n/a</q3>
+							<q4>n/a</q4>
+							<fy>n/a</fy>
+						</year2010>
+						<year2011>
+							<q1>n/a</q1>
+							<q2>n/a</q2>
+							<q3>n/a</q3>
+							<q4>n/a</q4>
+							<fy>n/a</fy>
+						</year2011>
+						<year2012>
+							<q1>n/a</q1>
+							<q2>n/a</q2>
+							<q3>n/a</q3>
+							<q4>n/a</q4>
+							<fy>n/a</fy>
+						</year2012>
+					</item>
+					<item name="Price/BVPS">
+						<year2009>
+							<q1>0.000000000000000</q1>
+							<q2>0.000000000000000</q2>
+							<q3>0.000000000000000</q3>
+							<q4>0.000000000000000</q4>
+							<fy>0.000000000000000</fy>
+						</year2009>
+						<year2010>
+							<q1>0.000000000000000</q1>
+							<q2>0.000000000000000</q2>
+							<q3>0.000000000000000</q3>
+							<q4>0.000000000000000</q4>
+							<fy>0.000000000000000</fy>
+						</year2010>
+						<year2011>
+							<q1>0.000000000000000</q1>
+							<q2>0.000000000000000</q2>
+							<q3>0.000000000000000</q3>
+							<q4>0.000000000000000</q4>
+							<fy>0.000000000000000</fy>
+						</year2011>
+						<year2012>
+							<q1>0.000000000000000</q1>
+							<q2>0.000000000000000</q2>
+							<q3>0.000000000000000</q3>
+							<q4>0.000000000000000</q4>
+							<fy>0.000000000000000</fy>
+						</year2012>
+						<year2013>
+							<q1>0.000000000000000</q1>
+							<q2>0.000000000000000</q2>
+							<q3>0.000000000000000</q3>
+							<q4>0.000000000000000</q4>
+							<fy>0.000000000000000</fy>
+						</year2013>
+					</item>
+					<item name="Price/CFPS">
+						<year2009>
+							<q1>0.000000000000000</q1>
+							<q2>0.000000000000000</q2>
+							<q3>0.000000000000000</q3>
+							<q4>0.000000000000000</q4>
+							<fy>0.000000000000000</fy>
+						</year2009>
+						<year2010>
+							<q1>0.000000000000000</q1>
+							<q2>0.000000000000000</q2>
+							<q3>0.000000000000000</q3>
+							<q4>0.000000000000000</q4>
+							<fy>0.000000000000000</fy>
+						</year2010>
+						<year2011>
+							<q1>0.000000000000000</q1>
+							<q2>0.000000000000000</q2>
+							<q3>0.000000000000000</q3>
+							<q4>0.000000000000000</q4>
+							<fy>0.000000000000000</fy>
+						</year2011>
+						<year2012>
+							<q1>0.000000000000000</q1>
+							<q2>0.000000000000000</q2>
+							<q3>0.000000000000000</q3>
+							<q4>0.000000000000000</q4>
+							<fy>0.000000000000000</fy>
+						</year2012>
+						<year2013>
+							<q1>0.000000000000000</q1>
+							<q2>0.000000000000000</q2>
+							<q3>0.000000000000000</q3>
+							<q4>0.000000000000000</q4>
+							<fy>0.000000000000000</fy>
+						</year2013>
+					</item>
+					<item name="Price/EPS">
+						<year2009>
+							<q1>0.000000000000000</q1>
+							<q2>0.000000000000000</q2>
+							<q3>0.000000000000000</q3>
+							<q4>0.000000000000000</q4>
+							<fy>0.000000000000000</fy>
+						</year2009>
+						<year2010>
+							<q1>0.000000000000000</q1>
+							<q2>0.000000000000000</q2>
+							<q3>0.000000000000000</q3>
+							<q4>0.000000000000000</q4>
+							<fy>0.000000000000000</fy>
+						</year2010>
+						<year2011>
+							<q1>0.000000000000000</q1>
+							<q2>0.000000000000000</q2>
+							<q3>0.000000000000000</q3>
+							<q4>0.000000000000000</q4>
+							<fy>0.000000000000000</fy>
+						</year2011>
+						<year2012>
+							<q1>0.000000000000000</q1>
+							<q2>0.000000000000000</q2>
+							<q3>0.000000000000000</q3>
+							<q4>0.000000000000000</q4>
+							<fy>0.000000000000000</fy>
+						</year2012>
+						<year2013>
+							<q1>0.000000000000000</q1>
+							<q2>0.000000000000000</q2>
+							<q3>0.000000000000000</q3>
+							<q4>0.000000000000000</q4>
+							<fy>0.000000000000000</fy>
+						</year2013>
+					</item>
+					<item name="Revenues">
+						<year2010>
+							<q1>129746.876553803000</q1>
+							<q2>82010.912577513000</q2>
+							<q3>371872.376218879000</q3>
+							<q4>999810.399622167000</q4>
+							<fy>970227.587639735000</fy>
+						</year2010>
+						<year2011>
+							<q1>643340.404237703000</q1>
+							<q2>488752.941221563000</q2>
+							<q3>85488.957049920000</q3>
+							<q4>740860.164924760000</q4>
+							<fy>24524.796120722000</fy>
+						</year2011>
+						<year2012>
+							<q1>944612.852054554000</q1>
+							<q2>845102.493804984000</q2>
+							<q3>19028.653398086000</q3>
+							<q4>681601.492001523000</q4>
+							<fy>693256.457367285000</fy>
+						</year2012>
+					</item>
+					<item name="Total Debt/EBITDA">
+						<year2010>
+							<q1>0.952121710000000</q1>
+							<q2>1.040446120000000</q2>
+							<q3>1.448806000000000</q3>
+							<q4>0.321075140000000</q4>
+							<fy>1.148525990000000</fy>
+						</year2010>
+						<year2011>
+							<q1>0.554868380000000</q1>
+							<q2>0.089371570000000</q2>
+							<q3>0.759120280000000</q3>
+							<q4>0.115631630000000</q4>
+							<fy>2.139134400000000</fy>
+						</year2011>
+						<year2012>
+							<q1>0.719842500000000</q1>
+							<q2>1.794203950000000</q2>
+							<q3>1.683079250000000</q3>
+							<q4>10.741376540000000</q4>
+							<fy>0.917793960000000</fy>
+						</year2012>
+					</item>
+				</PeriodData>
+			</FinancialData>
+		</entity>
+	</entities>
+	<Analysts>
+		<Analyst id="AA">
+			<Name>AA Arfaei</Name>
+		</Analyst>
+		<Analyst id="AF">
+			<Name>AF Fisher</Name>
+		</Analyst>
+		<Analyst id="AHL">
+			<Name>AHL Lapchinski</Name>
+		</Analyst>
+	</Analysts>
+</Publication>

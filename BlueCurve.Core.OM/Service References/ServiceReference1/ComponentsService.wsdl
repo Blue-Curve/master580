@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" name="ComponentsService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost/bc_core_components_svc/Components.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost/bc_core_components_svc/Components.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost/bc_core_components_svc/Components.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/bc_core_components_svc" />
+      <xsd:import schemaLocation="http://localhost/bc_core_components_svc/Components.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/bc_core_components_objects" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IComponentsService_TestService_InputMessage">
+    <wsdl:part name="parameters" element="tns:TestService" />
+  </wsdl:message>
+  <wsdl:message name="IComponentsService_TestService_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TestServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IComponentsService_TestComponent_InputMessage">
+    <wsdl:part name="parameters" element="tns:TestComponent" />
+  </wsdl:message>
+  <wsdl:message name="IComponentsService_TestComponent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TestComponentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IComponentsService_GetJsonForBCComponent_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetJsonForBCComponent" />
+  </wsdl:message>
+  <wsdl:message name="IComponentsService_GetJsonForBCComponent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetJsonForBCComponentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IComponentsService_GetJsonForBCComponentInTemplate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetJsonForBCComponentInTemplate" />
+  </wsdl:message>
+  <wsdl:message name="IComponentsService_GetJsonForBCComponentInTemplate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetJsonForBCComponentInTemplateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IComponentsService_GetJsonForBCComponentInDocument_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetJsonForBCComponentInDocument" />
+  </wsdl:message>
+  <wsdl:message name="IComponentsService_GetJsonForBCComponentInDocument_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetJsonForBCComponentInDocumentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IComponentsService_GetJsonForDocumentCompostion_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetJsonForDocumentCompostion" />
+  </wsdl:message>
+  <wsdl:message name="IComponentsService_GetJsonForDocumentCompostion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetJsonForDocumentCompostionResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IComponentsService">
+    <wsdl:operation name="TestService">
+      <wsdl:input wsaw:Action="http://tempuri.org/IComponentsService/TestService" message="tns:IComponentsService_TestService_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IComponentsService/TestServiceResponse" message="tns:IComponentsService_TestService_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TestComponent">
+      <wsdl:input wsaw:Action="http://tempuri.org/IComponentsService/TestComponent" message="tns:IComponentsService_TestComponent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IComponentsService/TestComponentResponse" message="tns:IComponentsService_TestComponent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetJsonForBCComponent">
+      <wsdl:input wsaw:Action="http://tempuri.org/IComponentsService/GetJsonForBCComponent" message="tns:IComponentsService_GetJsonForBCComponent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IComponentsService/GetJsonForBCComponentResponse" message="tns:IComponentsService_GetJsonForBCComponent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetJsonForBCComponentInTemplate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IComponentsService/GetJsonForBCComponentInTemplate" message="tns:IComponentsService_GetJsonForBCComponentInTemplate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IComponentsService/GetJsonForBCComponentInTemplateResponse" message="tns:IComponentsService_GetJsonForBCComponentInTemplate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetJsonForBCComponentInDocument">
+      <wsdl:input wsaw:Action="http://tempuri.org/IComponentsService/GetJsonForBCComponentInDocument" message="tns:IComponentsService_GetJsonForBCComponentInDocument_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IComponentsService/GetJsonForBCComponentInDocumentResponse" message="tns:IComponentsService_GetJsonForBCComponentInDocument_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetJsonForDocumentCompostion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IComponentsService/GetJsonForDocumentCompostion" message="tns:IComponentsService_GetJsonForDocumentCompostion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IComponentsService/GetJsonForDocumentCompostionResponse" message="tns:IComponentsService_GetJsonForDocumentCompostion_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IComponentsService" type="tns:IComponentsService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="TestService">
+      <soap:operation soapAction="http://tempuri.org/IComponentsService/TestService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestComponent">
+      <soap:operation soapAction="http://tempuri.org/IComponentsService/TestComponent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetJsonForBCComponent">
+      <soap:operation soapAction="http://tempuri.org/IComponentsService/GetJsonForBCComponent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetJsonForBCComponentInTemplate">
+      <soap:operation soapAction="http://tempuri.org/IComponentsService/GetJsonForBCComponentInTemplate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetJsonForBCComponentInDocument">
+      <soap:operation soapAction="http://tempuri.org/IComponentsService/GetJsonForBCComponentInDocument" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetJsonForDocumentCompostion">
+      <soap:operation soapAction="http://tempuri.org/IComponentsService/GetJsonForDocumentCompostion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ComponentsService">
+    <wsdl:port name="BasicHttpBinding_IComponentsService" binding="tns:BasicHttpBinding_IComponentsService">
+      <soap:address location="http://localhost/bc_core_components_svc/Components.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

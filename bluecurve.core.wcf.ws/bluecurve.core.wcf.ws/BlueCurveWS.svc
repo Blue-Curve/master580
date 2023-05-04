@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="bluecurve.core.wcf.ws.Service1" CodeBehind="BlueCurveWS.svc.cs" %>
