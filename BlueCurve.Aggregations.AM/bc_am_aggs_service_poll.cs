@@ -149,7 +149,7 @@ using System.Net.NetworkInformation;
              certificate.client_mac_address = ma.get_mac_address();
              certificate.user_id = "BlueCurveAggUniverseServices: " + universe_id.ToString() + ": " + certificate.client_mac_address;
              BlueCurve.Aggregations.AM.ServiceReference1.BCIISServicesClient s = new BlueCurve.Aggregations.AM.ServiceReference1.BCIISServicesClient();
-
+            //PR
              s.Endpoint.Binding.SendTimeout = TimeSpan.FromMilliseconds(99999990);
              EndpointAddress ea = new EndpointAddress("http://localhost/BCIISServices/BCIISServices.svc");
              s.Endpoint.Address = ea;
