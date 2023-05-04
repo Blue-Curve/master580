@@ -39,7 +39,7 @@ public class bc_am_aggs_service_based
     SynchronizedCollection<abc_calc_agg> gabc_calc_aggs;
     SynchronizedCollection<abc_calc_agg> gabc_calc_aggs_growths;
     SynchronizedCollection<abc_calc_agg> gabc_calc_aggs_cc;
-   
+
     //List<abc_calc_agg> gabc_calc_aggs;
     //List<abc_calc_agg> gabc_calc_aggs_growths;
     //List<abc_calc_agg> gabc_calc_aggs_cc;
@@ -49,10 +49,10 @@ public class bc_am_aggs_service_based
     public List<abc_calc_agg> debugabc_calc_aggs_cc;
     public List<ttest_result> debuglttest_result;
 
-    
+
     private readonly object monitor = new object();
 
-    public void run(long universe_id, ref  bc_cs_security.certificate gcertificate, int laudit_id, DateTime laudit_date, bool debug_mode = false, long target_entity_id = 0, long dual_entity_id = 0, int debug_exch_method = -1, string debug_calc_type = "")
+    public void run(long universe_id, ref bc_cs_security.certificate gcertificate, int laudit_id, DateTime laudit_date, bool debug_mode = false, long target_entity_id = 0, long dual_entity_id = 0, int debug_exch_method = -1, string debug_calc_type = "")
     {
         certificate = gcertificate;
         error_activity log_activity;
@@ -253,7 +253,7 @@ public class bc_am_aggs_service_based
                 if (calc.calc_type == "aggregate style" || calc.calc_type == "aggregate style use mean")
                 {
                     calc.calc_type = "aggregate calenderized";
-                 
+
                 }
                 calculations.Add(calc);
             }
@@ -461,7 +461,7 @@ public class bc_am_aggs_service_based
                             thread_count = thread_count + 1;
                         }
                         athreads[i].Start();
-                        
+
                     }
 
                     log_activity = new error_activity("bc_am_aggs_serviced_based", "run", "All Threads Started", false, ref certificate);
@@ -516,7 +516,7 @@ public class bc_am_aggs_service_based
                             thread_count = thread_count + 1;
                         }
                         athreads[i].Start();
-                        
+
                         log_activity = new error_activity("bc_am_aggs_serviced_based", "run", "Thread Count Start: " + thread_count.ToString(), false, ref certificate);
                         timings.Add(log_activity);
                     }
@@ -633,7 +633,7 @@ public class bc_am_aggs_service_based
     {
         try
         {
-            
+
             error_activity log_activity = new error_activity("bc_am_aggs_serviced_based", "execute_target", "Start Target: " + entity_id.ToString() + ": " + dual_entity_id.ToString(), false, ref certificate);
             timings.Add(log_activity);
 
@@ -707,10 +707,10 @@ public class bc_am_aggs_service_based
         }
         finally
         {
-           lock (monitor)
-           {
-             thread_count = thread_count - 1;
-             target_count = target_count - 1;
+            lock (monitor)
+            {
+                thread_count = thread_count - 1;
+                target_count = target_count - 1;
             }
 
         }
@@ -1143,7 +1143,7 @@ public class bc_am_aggs_service_based
             errors.Add(log_error);
         }
     }
-    void put_entities_into_target(ref SynchronizedCollection<abc_calc_agg> stage, ref  List<abc_calc_agg> targetout, long entity_id, long dual_entity_id, long host_curr_id)
+    void put_entities_into_target(ref SynchronizedCollection<abc_calc_agg> stage, ref List<abc_calc_agg> targetout, long entity_id, long dual_entity_id, long host_curr_id)
     {
         try
         {
@@ -1427,7 +1427,7 @@ public class bc_am_aggs_service_based
 
     }
 
-    void assign_to_results(ref  List<agg_result> allresults, List<object> lresults, int exch_type, long currency_id, long target_entity_id, long dual_entity_id, int restype = 0)
+    void assign_to_results(ref List<agg_result> allresults, List<object> lresults, int exch_type, long currency_id, long target_entity_id, long dual_entity_id, int restype = 0)
     {
         try
         {
@@ -1496,7 +1496,7 @@ public class bc_am_aggs_service_based
     }
 
 
-    void ttest_assign_to_results(ref  List<ttest_abc_calc_agg> allresults, List<object> lresults, string style_calculation_type, double standard_deviation_mult, int restype)
+    void ttest_assign_to_results(ref List<ttest_abc_calc_agg> allresults, List<object> lresults, string style_calculation_type, double standard_deviation_mult, int restype)
     {
         try
         {
@@ -1553,7 +1553,7 @@ public class bc_am_aggs_service_based
                 {
                     aresult.standard_deviation_mult = standard_deviation_mult;
                 }
-                catch 
+                catch
                 {
                     aresult.standard_deviation_mult = 3;
                 }
@@ -1698,7 +1698,9 @@ public class bc_am_aggs_service_based
 
                             var qcrosscontributorfinal = from n in resultscc
                                                          join d in resultscc on n.contributor_id equals d.contributor_1_id
-                                                         where (n.contributor_2_id == d.contributor_id) && (n.year == d.year) && (d.workflow_stage == n.workflow_stage) && (d.period_id == n.period_id) && (d.item_id == n.item_id) && (d.target_entity_id == n.target_entity_id) && (d.dual_entity_id == n.dual_entity_id)
+                                                         where (d.value != 0) && (n.contributor_2_id == d.contributor_id) && (n.year == d.year) && (d.workflow_stage == n.workflow_stage) && (d.period_id == n.period_id) && (d.item_id == n.item_id) && (d.target_entity_id == n.target_entity_id) && (d.dual_entity_id == n.dual_entity_id)
+                                                         //where  (n.contributor_2_id == d.contributor_id) && (n.year == d.year) && (d.workflow_stage == n.workflow_stage) && (d.period_id == n.period_id) && (d.item_id == n.item_id) && (d.target_entity_id == n.target_entity_id) && (d.dual_entity_id == n.dual_entity_id)
+
                                                          select new agg_result
                                                          {
                                                              universe_id = universe_id,
@@ -1724,7 +1726,7 @@ public class bc_am_aggs_service_based
                     }
                     catch (Exception e)
                     {
-                        error_activity log_error = new error_activity("bc_am_aggs_serviced_based", "evaluate_formula", "failed to execute formula: " + universe_formulas[i].linq_formula + ":" + universe_formulas[i].having + ": " + universe_formulas[i].where + ": " + e.Message, true, ref certificate, target_entity_id, dual_entity_id);
+                        error_activity log_error = new error_activity("bc_am_aggs_serviced_based", "evaluate_formula", "failed to execute formula: " + universe_formulas[i].linq_formula + ":" + universe_formulas[i].having + ": " + universe_formulas[i].where + ": result row id: " + universe_formulas[i].result_row_id.ToString() + ": " + e.Message, true, ref certificate, target_entity_id, dual_entity_id);
                         errors.Add(log_error);
                     }
                 }
@@ -1807,12 +1809,12 @@ public class bc_am_aggs_service_based
     }
 
 
-    void  evaluate_formula_ttest(long universe_id, long currency_id, int exch_type, List<abc_calc_agg> labc_calc_aggs, List<abc_calc_agg> labc_calc_aggs_growths, List<abc_calc_agg> labc_calc_aggs_cc, long target_entity_id, long dual_entity_id, int exch_rate_method, string calc_type, bool debug_only)
+    void evaluate_formula_ttest(long universe_id, long currency_id, int exch_type, List<abc_calc_agg> labc_calc_aggs, List<abc_calc_agg> labc_calc_aggs_growths, List<abc_calc_agg> labc_calc_aggs_cc, long target_entity_id, long dual_entity_id, int exch_rate_method, string calc_type, bool debug_only)
     {
         try
         {
             //standard deviation read this from database
-            
+
             int i, j;
             List<ttest_abc_calc_agg> allresults = new List<ttest_abc_calc_agg>();
             List<ttest_abc_calc_agg> resultsr = new List<ttest_abc_calc_agg>();
@@ -1892,7 +1894,7 @@ public class bc_am_aggs_service_based
                                include_in_growthr = v.include_in_growthr,
                                include_in_growthl = v.include_in_growthl,
                                num_years = v.num_years,
-                              
+
                            };
             labc_calc_aggs_linear_growths = cpqueryg.ToList<abc_calc_agg>();
             var cpquerycc = from v in labc_calc_aggs_cc
@@ -2011,7 +2013,7 @@ public class bc_am_aggs_service_based
                             var qcrosscontributorfinal = from n in resultscc
                                                          join d in resultscc on n.contributor_id equals d.contributor_1_id
                                                          where ((n.entity_id == d.entity_id) && n.contributor_2_id == d.contributor_id) && (n.year == d.year) && (d.workflow_stage == n.workflow_stage) && (d.period_id == n.period_id) && (d.item_id == n.item_id)
-                                                         && d.linear_result !=0
+                                                         && d.linear_result != 0
                                                          select new ttest_abc_calc_agg
                                                          {
 
@@ -2084,7 +2086,7 @@ public class bc_am_aggs_service_based
                            };
             allresults = sdquery1.ToList<ttest_abc_calc_agg>();
             //step sum the values
-           
+
             var sdquery2 = from v in allresults
                            group v by new { v.standard_deviation_mult, v.style_calculation_type, v.total_weight, v.year, v.item_id, v.contributor_id, v.period_id, v.workflow_stage, v.mean } into g
                            where g.Count() != 0
@@ -2092,7 +2094,7 @@ public class bc_am_aggs_service_based
                            {
                                sd3 = g.Key.standard_deviation_mult * (Math.Pow(System.Convert.ToDouble(g.Sum(x => x.variance) / g.Count()), 0.5)),
                                //sd3 = 3 * (Math.Pow(System.Convert.ToDouble(g.Sum(x => x.variance) / g.Count()), 0.5)),
-                               
+
                                num_points = g.Count(),
                                mean = g.Key.mean,
                                year = g.Key.year,
@@ -2111,7 +2113,7 @@ public class bc_am_aggs_service_based
             var wnquery1 = from v in allresults
                            join g in lttest_result on v.item_id equals g.item_id
                            where v.contributor_id == g.contributor_id && v.year == g.year && v.period_id == g.period_id && v.workflow_stage == g.workflow_stage && g.total_weight != 0
-                           && g.total_weight !=0
+                           && g.total_weight != 0
                            select new ttest_abc_calc_agg
                            {
                                entity_id = v.entity_id,
@@ -2167,7 +2169,7 @@ public class bc_am_aggs_service_based
             // final standard deviation     
             var wsdquery2 = from v in allresults
                             group v by new { v.weighted_mean, v.year, v.item_id, v.contributor_id, v.period_id, v.workflow_stage, v.mean } into g
-                            where g.Sum(x => x.scaled_weight_sq) !=0
+                            where g.Sum(x => x.scaled_weight_sq) != 0
                             select new ttest_result
                             {
                                 standard_deviation = (Math.Pow(System.Convert.ToDouble(g.Sum(x => x.variance)), 0.5)),
@@ -2280,14 +2282,14 @@ public class bc_am_aggs_service_based
     {
         try
         {
-           
+
             agg_batch a = new agg_batch();
             error_activity log_activity = new error_activity("bc_am_aggs_serviced_based", "dothetask", "Start Batch: " + batch_id.ToString() + " Thread Count: " + thread_count.ToString(), false, ref certificate);
             timings.Add(log_activity);
-         
+
             a.load_data(batch_id, universe_id, ref gabc_calc_aggs, ref gabc_calc_aggs_growths, ref gabc_calc_aggs_cc, year_periods, tcalculations, ref thread_count, ref timings, ref errors, exch_rate_method, calc_type, currency_id, audit_id, audit_date, ref certificate);
-           
-            log_activity = new error_activity("bc_am_aggs_serviced_based", "dothetask", "End Batch: " + batch_id.ToString() + " Thread Count: " + (thread_count-1).ToString(), false, ref certificate);
+
+            log_activity = new error_activity("bc_am_aggs_serviced_based", "dothetask", "End Batch: " + batch_id.ToString() + " Thread Count: " + (thread_count - 1).ToString(), false, ref certificate);
             timings.Add(log_activity);
 
         }
@@ -2303,7 +2305,7 @@ public class bc_am_aggs_service_based
                 thread_count = thread_count - 1;
             }
         }
-           
+
     }
     void remove_incomplete_calcs(ref List<abc_calc_agg> stage)
     {
@@ -2371,7 +2373,7 @@ public class bc_am_aggs_service_based
             var query = from v in stage
                         where v.parent_entity_id != 0
                         && v.value_1 != null
-                        group v by new { v.operand_1_is_weight, v.operand_2_is_weight, v.operand_3_is_weight, v.operand_4_is_weight, v.operand_5_is_weight, v.operand_6_is_weight, v.operand_7_is_weight, v.operand_8_is_weight,  v.year, v.result_row_id, v.contributor_id, v.period_id, v.workflow_stage, v.parent_entity_id, v.target_entity_id, v.dual_entity_id, v.host_curr_id, v.calculation_id, v.class_id } into g
+                        group v by new { v.operand_1_is_weight, v.operand_2_is_weight, v.operand_3_is_weight, v.operand_4_is_weight, v.operand_5_is_weight, v.operand_6_is_weight, v.operand_7_is_weight, v.operand_8_is_weight, v.year, v.result_row_id, v.contributor_id, v.period_id, v.workflow_stage, v.parent_entity_id, v.target_entity_id, v.dual_entity_id, v.host_curr_id, v.calculation_id, v.class_id } into g
 
                         select new abc_calc_agg
                         {
@@ -2406,7 +2408,7 @@ public class bc_am_aggs_service_based
             query = from v in stage
                     where v.parent_entity_id != 0
                     && v.value_2 != null
-                    group v by new { v.operand_1_is_weight, v.operand_2_is_weight, v.operand_3_is_weight, v.operand_4_is_weight, v.operand_5_is_weight, v.operand_6_is_weight, v.operand_7_is_weight, v.operand_8_is_weight,  v.year, v.result_row_id, v.contributor_id, v.period_id, v.workflow_stage, v.parent_entity_id, v.target_entity_id, v.dual_entity_id, v.host_curr_id, v.calculation_id, v.class_id } into g
+                    group v by new { v.operand_1_is_weight, v.operand_2_is_weight, v.operand_3_is_weight, v.operand_4_is_weight, v.operand_5_is_weight, v.operand_6_is_weight, v.operand_7_is_weight, v.operand_8_is_weight, v.year, v.result_row_id, v.contributor_id, v.period_id, v.workflow_stage, v.parent_entity_id, v.target_entity_id, v.dual_entity_id, v.host_curr_id, v.calculation_id, v.class_id } into g
 
                     select new abc_calc_agg
                     {
@@ -2442,7 +2444,7 @@ public class bc_am_aggs_service_based
             query = from v in stage
                     where v.parent_entity_id != 0
                     && v.value_3 != null
-                    group v by new { v.operand_1_is_weight, v.operand_2_is_weight, v.operand_3_is_weight, v.operand_4_is_weight, v.operand_5_is_weight, v.operand_6_is_weight, v.operand_7_is_weight, v.operand_8_is_weight,  v.year, v.result_row_id, v.contributor_id, v.period_id, v.workflow_stage, v.parent_entity_id, v.target_entity_id, v.dual_entity_id, v.host_curr_id, v.calculation_id, v.class_id } into g
+                    group v by new { v.operand_1_is_weight, v.operand_2_is_weight, v.operand_3_is_weight, v.operand_4_is_weight, v.operand_5_is_weight, v.operand_6_is_weight, v.operand_7_is_weight, v.operand_8_is_weight, v.year, v.result_row_id, v.contributor_id, v.period_id, v.workflow_stage, v.parent_entity_id, v.target_entity_id, v.dual_entity_id, v.host_curr_id, v.calculation_id, v.class_id } into g
 
 
                     select new abc_calc_agg
@@ -2480,7 +2482,7 @@ public class bc_am_aggs_service_based
             query = from v in stage
                     where v.parent_entity_id != 0
                     && v.value_4 != null
-                    group v by new { v.operand_1_is_weight, v.operand_2_is_weight, v.operand_3_is_weight, v.operand_4_is_weight, v.operand_5_is_weight, v.operand_6_is_weight, v.operand_7_is_weight, v.operand_8_is_weight,  v.year, v.result_row_id, v.contributor_id, v.period_id, v.workflow_stage, v.parent_entity_id, v.target_entity_id, v.dual_entity_id, v.host_curr_id, v.calculation_id, v.class_id } into g
+                    group v by new { v.operand_1_is_weight, v.operand_2_is_weight, v.operand_3_is_weight, v.operand_4_is_weight, v.operand_5_is_weight, v.operand_6_is_weight, v.operand_7_is_weight, v.operand_8_is_weight, v.year, v.result_row_id, v.contributor_id, v.period_id, v.workflow_stage, v.parent_entity_id, v.target_entity_id, v.dual_entity_id, v.host_curr_id, v.calculation_id, v.class_id } into g
 
 
                     select new abc_calc_agg
@@ -2517,7 +2519,7 @@ public class bc_am_aggs_service_based
             query = from v in stage
                     where v.parent_entity_id != 0
                     && v.value_5 != null
-                    group v by new { v.operand_1_is_weight, v.operand_2_is_weight, v.operand_3_is_weight, v.operand_4_is_weight, v.operand_5_is_weight, v.operand_6_is_weight, v.operand_7_is_weight, v.operand_8_is_weight,  v.year, v.result_row_id, v.contributor_id, v.period_id, v.workflow_stage, v.parent_entity_id, v.target_entity_id, v.dual_entity_id, v.host_curr_id, v.calculation_id, v.class_id } into g
+                    group v by new { v.operand_1_is_weight, v.operand_2_is_weight, v.operand_3_is_weight, v.operand_4_is_weight, v.operand_5_is_weight, v.operand_6_is_weight, v.operand_7_is_weight, v.operand_8_is_weight, v.year, v.result_row_id, v.contributor_id, v.period_id, v.workflow_stage, v.parent_entity_id, v.target_entity_id, v.dual_entity_id, v.host_curr_id, v.calculation_id, v.class_id } into g
 
 
                     select new abc_calc_agg
@@ -2554,7 +2556,7 @@ public class bc_am_aggs_service_based
             query = from v in stage
                     where v.parent_entity_id != 0
                     && v.value_6 != null
-                    group v by new { v.operand_1_is_weight, v.operand_2_is_weight, v.operand_3_is_weight, v.operand_4_is_weight, v.operand_5_is_weight, v.operand_6_is_weight, v.operand_7_is_weight, v.operand_8_is_weight,  v.year, v.result_row_id, v.contributor_id, v.period_id, v.workflow_stage, v.parent_entity_id, v.target_entity_id, v.dual_entity_id, v.host_curr_id, v.calculation_id, v.class_id } into g
+                    group v by new { v.operand_1_is_weight, v.operand_2_is_weight, v.operand_3_is_weight, v.operand_4_is_weight, v.operand_5_is_weight, v.operand_6_is_weight, v.operand_7_is_weight, v.operand_8_is_weight, v.year, v.result_row_id, v.contributor_id, v.period_id, v.workflow_stage, v.parent_entity_id, v.target_entity_id, v.dual_entity_id, v.host_curr_id, v.calculation_id, v.class_id } into g
 
 
                     select new abc_calc_agg
@@ -2592,7 +2594,7 @@ public class bc_am_aggs_service_based
             query = from v in stage
                     where v.parent_entity_id != 0
                     && v.value_7 != null
-                    group v by new { v.operand_1_is_weight, v.operand_2_is_weight, v.operand_3_is_weight, v.operand_4_is_weight, v.operand_5_is_weight, v.operand_6_is_weight, v.operand_7_is_weight, v.operand_8_is_weight,  v.year, v.result_row_id, v.contributor_id, v.period_id, v.workflow_stage, v.parent_entity_id, v.target_entity_id, v.dual_entity_id, v.host_curr_id, v.calculation_id, v.class_id } into g
+                    group v by new { v.operand_1_is_weight, v.operand_2_is_weight, v.operand_3_is_weight, v.operand_4_is_weight, v.operand_5_is_weight, v.operand_6_is_weight, v.operand_7_is_weight, v.operand_8_is_weight, v.year, v.result_row_id, v.contributor_id, v.period_id, v.workflow_stage, v.parent_entity_id, v.target_entity_id, v.dual_entity_id, v.host_curr_id, v.calculation_id, v.class_id } into g
 
 
                     select new abc_calc_agg
@@ -2753,7 +2755,7 @@ public class bc_am_aggs_service_based
                         calculation_id = s.calculation_id,
                         class_id = s.class_id,
                         //weighting = s.weighting,
-                        weighting = s.operand_1_is_weight==true?s.value_1:s.operand_2_is_weight==true?s.value_2:s.operand_3_is_weight==true?s.value_3:s.operand_4_is_weight==true?s.value_4:s.operand_5_is_weight==true?s.value_5:s.operand_6_is_weight==true?s.value_6:s.operand_7_is_weight==true?s.value_7:s.operand_8_is_weight==true?s.value_8:0,
+                        weighting = s.operand_1_is_weight == true ? s.value_1 : s.operand_2_is_weight == true ? s.value_2 : s.operand_3_is_weight == true ? s.value_3 : s.operand_4_is_weight == true ? s.value_4 : s.operand_5_is_weight == true ? s.value_5 : s.operand_6_is_weight == true ? s.value_6 : s.operand_7_is_weight == true ? s.value_7 : s.operand_8_is_weight == true ? s.value_8 : 0,
                         operand_1_is_weight = s.operand_1_is_weight,
                         operand_2_is_weight = s.operand_2_is_weight,
                         operand_3_is_weight = s.operand_3_is_weight,
@@ -2833,7 +2835,7 @@ public class bc_am_aggs_service_based
         SynchronizedCollection<error_activity> timings;
         SynchronizedCollection<error_activity> errors;
 
-        public void load_data(int batch_id, long universe_id, ref SynchronizedCollection<abc_calc_agg> lgabc_calc_aggs, ref SynchronizedCollection<abc_calc_agg> lgabc_calc_aggs_growths, ref SynchronizedCollection<abc_calc_agg> lgabc_calc_aggs_cc, List<year_period> lgyear_periods, List<calculation> lgcalculations, ref int thread_count, ref SynchronizedCollection<error_activity> gtimings, ref  SynchronizedCollection<error_activity> gerrors, int exch_rate_method, string calc_type, long currency_id, int audit_id, DateTime audit_date, ref bc_cs_security.certificate gcertificate)
+        public void load_data(int batch_id, long universe_id, ref SynchronizedCollection<abc_calc_agg> lgabc_calc_aggs, ref SynchronizedCollection<abc_calc_agg> lgabc_calc_aggs_growths, ref SynchronizedCollection<abc_calc_agg> lgabc_calc_aggs_cc, List<year_period> lgyear_periods, List<calculation> lgcalculations, ref int thread_count, ref SynchronizedCollection<error_activity> gtimings, ref SynchronizedCollection<error_activity> gerrors, int exch_rate_method, string calc_type, long currency_id, int audit_id, DateTime audit_date, ref bc_cs_security.certificate gcertificate)
         {
             try
             {
@@ -2842,9 +2844,9 @@ public class bc_am_aggs_service_based
                 errors = gerrors;
                 error_activity log_timings = new error_activity("agg_batch", "load_data", "Start Batch: " + batch_id.ToString(), false, ref certificate);
                 timings.Add(log_timings);
-                get_data_from_db(batch_id, universe_id, ref  lgyear_periods, lgcalculations, exch_rate_method, calc_type, currency_id, audit_id, audit_date);
+                get_data_from_db(batch_id, universe_id, ref lgyear_periods, lgcalculations, exch_rate_method, calc_type, currency_id, audit_id, audit_date);
 
-              
+
 
 
                 //assign and apportion data
@@ -2858,9 +2860,9 @@ public class bc_am_aggs_service_based
                 remove_blanks_items(ref abc_calc_aggs_growths);
                 remove_blanks_items(ref abc_calc_aggs_cc);
 
-                assign_to_master_list(batch_id, ref abc_calc_aggs, ref  lgabc_calc_aggs);
-                assign_to_master_list_growths(batch_id, ref abc_calc_aggs_growths, ref  lgabc_calc_aggs_growths);
-                assign_to_master_list_cc(batch_id, ref abc_calc_aggs_cc, ref  lgabc_calc_aggs_cc);
+                assign_to_master_list(batch_id, ref abc_calc_aggs, ref lgabc_calc_aggs);
+                assign_to_master_list_growths(batch_id, ref abc_calc_aggs_growths, ref lgabc_calc_aggs_growths);
+                assign_to_master_list_cc(batch_id, ref abc_calc_aggs_cc, ref lgabc_calc_aggs_cc);
 
             }
 
@@ -2874,7 +2876,7 @@ public class bc_am_aggs_service_based
             {
                 error_activity log_timings = new error_activity("agg_batch", "load_data", "End Batch: " + batch_id.ToString(), false, ref certificate);
                 timings.Add(log_timings);
-              
+
             }
         }
 
@@ -4236,7 +4238,7 @@ public class bc_am_aggs_service_based
                 query = from v in stage
                         join s in entity_period_tbl_info on new { j3 = v.entity_id, j4 = v.year, j5 = v.period_id, j6 = v.contributor_id, j8 = v.workflow_stage }
                     equals new { j3 = s.entity_id, j4 = s.year, j5 = s.period_id, j6 = s.contributor_Id, j8 = s.workflow_stage }
-                        //where s.calenderized_portion_ratio != 0
+                    //where s.calenderized_portion_ratio != 0
 
                         select new abc_calc_agg
                         {
@@ -4668,7 +4670,7 @@ public class year_period
 }
 public class calculation
 {
-      long _key = 1;
+    long _key = 1;
     long _result_row_id;
 
     long _operand_1_id;
@@ -4703,7 +4705,7 @@ public class calculation
     int _op8_curr_type;
     long _calculation_id;
     string _calc_type;
-   
+
     public long calculation_id
     {
         get { return _calculation_id; }
@@ -5929,9 +5931,9 @@ public class ttest_abc_calc_agg
     long _contributor_2_id;
 
     public double standard_deviation_mult
-     {
-         get { return _standard_deviation_mult; }
-         set { _standard_deviation_mult = value; }
+    {
+        get { return _standard_deviation_mult; }
+        set { _standard_deviation_mult = value; }
     }
 
     public int num_years
